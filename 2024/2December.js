@@ -10,7 +10,7 @@ const adventTask = async () => {
 			newArr.push(rows[i].split(" "));
 		}
 
-		function consistency(array) {
+		function safeCheck(array) {
 			let arrayIncreasing = null;
 
 			for (let i = 0; i < array.length - 1; i++) {
@@ -38,14 +38,24 @@ const adventTask = async () => {
 			return true;
 		}
 
-		let sum = 0;
+		function problemDampener(array) {
+			for (let i = 0; i < array.length; i++) {
+				const temporaryArray = [...array.slice(0, i), ...array.slice(i + 1)];
+				if (safeCheck(temporaryArray)) {
+					return true;
+				}
+			}
+			return false;
+		}
+
+		let safeArrays = 0;
 		for (let j = 0; j < newArr.length; j++) {
-			if (consistency(newArr[j])) {
-				sum += 1;
+			if (safeCheck(newArr[j]) || problemDampener(newArr[j])) {
+				safeArrays += 1;
 			}
 		}
 
-		console.log(sum);
+		console.log(safeArrays);
 	} catch (error) {
 		console.error(`An error occurred: ${error}`);
 	}
