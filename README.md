@@ -9,3 +9,6 @@
 You can use whatever programming language you want to complete the puzzles. It can also be a great time to learn a new language!
 
 Advent of Code is a great way to practice coding, challenge yourself, and even compete with others if you want to!
+
+### Years Participated
+- [2024](https://github.com/luddekn/advent-of-code/tree/master/2024)
