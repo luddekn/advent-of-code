@@ -11,5 +11,5 @@ You can use whatever programming language you want to complete the puzzles. It c
 
 Advent of Code is a great way to practice coding, challenge yourself, and even compete with others if you want to!
 
-### Years Participated
+![YearsParticipated](https://github.com/luddekn/advent-of-code/blob/master/images/Years-Participated.png?raw=true)
 - [2024](https://github.com/luddekn/advent-of-code/tree/master/2024)
