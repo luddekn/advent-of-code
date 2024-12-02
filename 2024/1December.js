@@ -2,7 +2,7 @@ const fs = require("fs").promises;
 
 const adventTask = async () => {
 	try {
-		const data = await fs.readFile("./1December.txt", "utf8");
+		const data = await fs.readFile("./input/1December.txt", "utf8");
 
 		const rows = data.trim().split("\n");
 		const leftList = [];
